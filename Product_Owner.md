@@ -106,6 +106,93 @@ O Road Map do produto é uma visão de alto nível do produto, que mostra as fun
 
 ## O Product Backlog
 
+-   Lista priorizada do trabalho necessário para o desenvolvimento do produto
+
+-   Os itens incluem a necessidade do usuário ou varias opções técnicas.
+
+-   São uma descrição de requisitos funcionais quanto não funcionais.
+
+O Product Owner é responsável por gerenciar o Product Backlog, ele é o responsável por definir o que deve ser feito, e o Time Scrum é o responsável por definir como deve ser feito.
+
+### Qualidades de um product backlog
+
+As qualidades desejavéis estão no acrônimo DEEP:
+
+-   Detalhado apropriadamente
+
+-   Estimado
+
+-   Emergente
+
+-   Priorizado
+
+### Cuidados do Product Backlog
+
+O Product Backlog deve ser altamente cuidado e gerenciado, é um processo contínuo e engloba algumas etapas:
+
+-   A medida que novos itens forem descobertos ou criados, eles devem ser adicionados ao Product Backlog
+
+-   O Product Backlog deve ser priorizado, os itens mais importantes devem estar no topo
+
+-   Os itens de maior prioridade são separados anteriormente ao próximo planejamento de sprint.
+
+#### Preparação para o planejamento do sprint
+
+A preparação é iniciada escolhendo o objetivo do sprint, que é uma meta que o time deve atingir ao final do sprint.
+
+#### Descoberta e Estruturação do Product Backlog
+
+O trabalho utilizando Product Backlog não precisa ser exclusivo, na verdade o time Scrum pode criar novos artefatos úteis, tais como:
+
+-   Resumo dos papeis do usuario
+
+-   Workflows
+
+-   Diagrama para regras de negócio
+
+Esses artefatos não substituem o Product Backlog, eles são apenas uma forma de estruturar o Product Backlog.
+
+A gestão do Product backlog é um processo colaborativo.
+
+Agrupar itens relacionados em temas é uma excelente prática
+
+Cada tema deve conter entre dois a cinco requisitos de alto nível
+
+Diversas ferramenas podem ser usadas para armazenamento do Product Backlog, a principal é a planilha
+
+#### Critérios para a priorização
+
+-   Valor
+
+-   Conhecimento
+
+-   Incerteza
+
+-   Risco
+
+-   Dependencias
+
+#### Estimativa do Product Backlog
+
+O Product Owner explica para o Time Scrum o que deve ser feito, então cabe ao time discutir e estimar o esforço necessário para implementar o item.
+
+#### Requisitos não funcionais
+
+Os requisitos não funcionais são requisitos que não estão relacionados diretamente com as funcionalidades do produto, mas que são importantes para o produto.
+
+O Product Owner e o Scrum Master não devem estimar nem influenciar as estimativas, mas o Product Owner deve estar presente nas reuniões.
+
+Os Requisitos não funcionais podem ser expressos como restrições
+
+#### Erros comuns:
+
+-   Especificação de requisição disfarçada de backlog
+
+-   Empurrar requisitos para o time
+
+-   Negligenciar o grooming(Preparação)
+
+
 ## O Plano de Liberações
 
 ## A Transição para o Papel de Product Owner
