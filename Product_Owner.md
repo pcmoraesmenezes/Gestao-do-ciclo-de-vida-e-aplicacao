@@ -273,5 +273,29 @@ Sugere-se a utilização de Temas ou Epics para a melhor utilização do PLano d
 
 ## A Transição para o Papel de Product Owner
 
+| O que fazer? | O que não fazer? |
+| --- | --- |
+|Diga o que deve ser feito| Diga como fazer ou quanto tempo gastará|
+|Desafie o Time|Ameace o Time|
+|Tenha interesse em formar um time de alta performance|Foque apenas em resultados de curto prazo|
+|Pratique o pensamento dirigido por valor|Mantenha o escopo original não importa o que aconteça|
+|Proteja o time de interrupções externas|Preocupe o Time com mudanças|
+|Insira mudanças nas sprints|Permita mudanças no decorrer da sprint|
+
 ## O Product Owner e o Scrum de Scrums
+
+### O Chief Product Owner
+
+O Chief Product Owner planeja, compõe, distribui e acompanha o trabalho do nível inferior. Quanto maior o nível, mais difícil o trabalho do P.O
+
+---
+Para se obter sucesso:
+
+-   Use apenas um Product backlog
+
+-   Entenda o horizonte de grooming
+
+-   Visões especificas de cada time no product backlog
+---
+A reunião de Scrums e Scrums permite que multiplos times se coordenem diariamente.
 
