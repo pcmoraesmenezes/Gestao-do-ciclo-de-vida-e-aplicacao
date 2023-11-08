@@ -7,3 +7,7 @@ Esse repositorio é uma anotação do curso de Gestão do ciclo de vida e aplica
 ## Conteúdo
 
 - [SCRUM](SCRUM.md)
+
+- [Product Owner](Product_Owner.md)
+
+- [Histórias de usuário](historias_de_usuario.md)
