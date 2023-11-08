@@ -249,7 +249,27 @@ O gráfico de burndown é uma ferramenta de previsão, que mostra o progresso do
 
 O burndown é a intersecção entre entre os eixos, exibindo a taxa na qual o esforço é consumido
 
+Uma previsão imprecisa inicialmente é aceitavel já que o progresso é inspecionado a cada revisão do sprint
 
+Recomenda-se a utilização de um plano de liberação no Scrum, entretanto é comurmente comum a utilização de apenas Burndown de Liberação e agrupar os itens do Product Backlog em subconjuntos.
+
+O Plano de liberações é como um mapa que guia a um destino, prevendo como o produto será  e quando o software sera liberado.
+
+Não é um artefato fixo, ele é atualizado na medida que o Product Backlog é atualizado 
+
+Ele é melhor criado e colaborado com reuniões de revisão do sprint
+
+Sugere-se a utilização de Temas ou Epics para a melhor utilização do PLano de liberações
+
+### Erros comuns:
+
+- Ausência de um plano de liberações ou Burndown de Liberações
+
+- Falta de comprometimento
+
+- Liberações Big-Bang (Tudo de uma vez)
+
+- Comprometimento de qualidade
 
 ## A Transição para o Papel de Product Owner
 
