@@ -195,6 +195,62 @@ Os Requisitos não funcionais podem ser expressos como restrições
 
 ## O Plano de Liberações
 
+O plano de liberações apoia o desenvolvimento e o inicio do produto de sucesso.
+
+Ele é responsável por facilitar o dialogo entre o Time Scrum e os Stakeholders
+
+"Nossa maior prioridade é satisfazer o cliente através da entrega contínua e adiantada de software de valor" - Manifesto Ágil
+
+As liberações frequentes possuem um preço, pois o software deve ser de alta qualidade e o produto deve ser fácil de instalar.
+
+As funcionalidades podem ser implementadas parcialmente nos incrementos iniciais do produto, mas a qualidade do software deve ser satisfeita em todos os incrementos.
+
+Práticas ágeis como TDD, Refactoring e Integração continua, facilitam a entrega e liberação do produto 
+
+### Ciclos Trimestrais
+
+O comum é que os projetos durem até 6 meses.
+
+Na necessidade de mais tempo se faz uso dos ciclos trimestrais, ou seja é liberada uma versão de software funcional, testado e documentado a cada três meses.
+
+### Qualidade Intrínseca
+
+O críterio de qualidade é capturado na definição de Pronto
+
+Esta definição requer que um produto implantavel esteja disponivel ao fim de cada Sprint(Software que foi executado, testado e documentado podendo ser liberado)
+
+A garantia de qualidade e controle formam uma parte fundamental dos sprints
+
+Os sprints devem entregar os produtos com os incrementos com a qualidade correta, o Product Owner não deve aceitar a entrega de trabalhos que não preencham o critério de ponto, nem encorajar o Time a fazer compromissos com a qualidade do software.
+
+### Velocidade 
+
+A velocidade é um indicador de quanto trabalho o Time consegue realizar em um sprint. "O Software funcionando é a principal medida de progresso" - Manifesto Ágil
+
+A velocidade é variada e fatores como integração de novos Times, férias de integrantes do Time, entre outros, podem afetar a velocidade.
+
+A velocidade não deve ser comparada entre um time e outro, claro que pode ser usada como uma estimativa, mas não deve ser usada como uma medida de desempenho.
+
+### Burdown de Liberações
+
+Artefato utilizado para acompanhar e prever o progresso de um projeto no Scrum
+
+Duas variantes:
+
+#### Burdown Chart
+
+Exibe o gráfico no ambiente do Time e o torna visivel na reunião de Revisão
+
+![Burdown Chart](/images/Captura%20de%20tela%20de%202023-11-08%2012-36-12.png)
+
+#### Burdown Bar
+
+O gráfico de burndown é uma ferramenta de previsão, que mostra o progresso do time em relação ao plano de liberação. O numero de Sprints é representado pelo eixo X e o numero de historias de usuario é representado pelo eixo Y.
+
+O burndown é a intersecção entre entre os eixos, exibindo a taxa na qual o esforço é consumido
+
+
+
 ## A Transição para o Papel de Product Owner
 
 ## O Product Owner e o Scrum de Scrums
