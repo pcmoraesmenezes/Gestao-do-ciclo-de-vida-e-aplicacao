@@ -64,3 +64,45 @@ Fidelidade é usualmente comparada com a aparência e funcionalidade do produto 
 
 Prototipos de baixa fidelidade são rápidos e baratos de se criar, mas não são muito detalhados.
 
+As vezes são definidos como design de papel ou prototipagem de papel, prototipos de baixa fidelidade são usados para testar ideias e conceitos.
+
+Entretanto esses design limitam a quantidade de feedback que pode ser obtido, pois não são muito detalhados.
+
+#### Prototipo de média fidelidade
+
+Prototipos de média fidelidade são mais detalhados que prototipos de baixa fidelidade, mas não são tão detalhados quanto prototipos de alta fidelidade.
+
+Prototipos de média fidelidade são usados para testar a funcionalidade de um produto, mas não são usados para testar a aparência do produto.
+
+#### Prototipo de alta fidelidade
+
+Prototipos de alta fidelidade são muito detalhados e se parecem com o produto final.
+
+Prototipos de alta fidelidade são usados para testar a aparência e funcionalidade de um produto.
+
+#### Prototipo de teste
+
+O objetivo de um prototipo de teste é testar uma hipótese, se o design atende as necessidades dos usuários e resolve o problema.
+
+É necessário identificar os alvos de teste e os objetivos do teste, além disso definir quem são o público alvo e como eles serão recrutados.
+
+Não importa o quanto se pense que o prototipo está bom, sempre é possível melhorar, e é extremamente necessário entender o usuário e o problema que está sendo resolvido.
+
+Existem algumas questões que podem surgir durante a prototipagem:
+
+- O que você acha dessa ideia (Prototipagem de baixa fidelidade)
+
+- O que você acha que esse item do menu faz? (Prototipagem de média fidelidade)
+
+- Você consegue encontrar um quarto e fazer uma reserva para ele? (Prototipagem de alta fidelidade)
+
+### Visão geral do produto centrado ao usuario durante o processo de design
+
+Tenta garantir que o produto está sendo desenvolvido com o usuário em mente e irá entregar valor para o usuário.
+
+Os objetivos da prototipagem podem mudar ao longo do processo de design, mas o objetivo principal é sempre o mesmo, testar e validar o design, a experiência do usuário e a funcionalidade de um produto antes do desenvolvimento.
+
+A medida que o produto vai sendo centrado e atendendo as exigências do usuário, é possível ir verificando os problemas e as soluções que o produto está resolvendo.
+
+Prototipagem é sobre design e não sobre código, prototipagem é sobre testar e validar o design, a experiência do usuário e a funcionalidade de um produto antes do desenvolvimento.
+
