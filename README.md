@@ -17,3 +17,5 @@ Esse repositorio é uma anotação do curso de Gestão do ciclo de vida e aplica
 - [Extreme Programimg](Extreme_Programimg.md)
 
 - [GIT](git.md)
+
+- [Integração Contínua](Integração_Contínua.md)
