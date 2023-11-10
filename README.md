@@ -19,3 +19,5 @@ Esse repositorio é uma anotação do curso de Gestão do ciclo de vida e aplica
 - [GIT](git.md)
 
 - [Integração Contínua](Integração_Contínua.md)
+
+- [Testes Automatizados](Testes_Automatizados.md)
