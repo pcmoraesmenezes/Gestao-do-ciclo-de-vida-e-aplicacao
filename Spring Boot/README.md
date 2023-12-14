@@ -330,3 +330,210 @@ Vamos quebrar a classe ResponseEntity e entender o que ela faz.
 **createUser:** Nome do método.
 
 **(@RequestBody UserRequest request):** Parâmetro do método.
+
+### Service
+
+O Service é responsável por implementar as regras de negócio.
+
+Nos controladores não tem nenhum tipo de regra(if else, for, etc), apenas chamadas aos métodos do serviço.
+
+O Service é um intermediário entre o controlador e o repositório. Ou seja, o controlador chama o serviço, e o serviço chama o repositório.
+
+### Repository
+
+O Repository é responsável por acessar o banco de dados.
+
+Diferente do Service e Controller, o repositório é uma interface. Isso porque o Spring Data JPA fornece uma implementação padrão para essa interface.
+
+Ela deve herdar a interface JpaRepository, que possui métodos para acessar o banco de dados.
+
+```java
+@Repository
+public interface UserRepository extends JpaRepository <User, Integer>{
+
+}
+```
+
+O repositório que herda de JpaRepository recebe dois parâmetros, o tipo da entidade e o tipo do id.
+
+Além disso ele já possui alguns métodos pré-definidos.
+
+- **findAll()**: Retorna todos os registros da tabela.
+
+- **findById()**: Retorna um registro da tabela com base no id.
+
+- **save()**: Salva um registro na tabela. - Caso a entidade não existe, ele insere um novo registro. - Caso a entidade exista, ele atualiza o registro.
+
+É possível criar consultas personalizadas através de métodos com nomes específicos.
+
+```java
+@Query(value = "SELECT * FROM user WHERE name = :name", nativeQuery = true)
+Optional<User> findUserByName(@Param("name") String name);
+
+```
+
+### Entity
+
+É uma representação da entidade que está no banco de dados. 
+
+Utiliza-se a anotação com @Entity.
+
+Precisa-se também definir o nome da tabela e qual o nome do schema que a tabela pertence.
+
+Dentro do contexto de Spring toda entidade precisa ter uma chave primária. 
+
+```java
+
+@Setter
+@Getter
+@Entity
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@Table(schema = "db", name = "user")
+public class User implements Serializable {
+    
+    @Id
+    @GeneratedValue(strategy=GeneratioType.IDENTITY)
+    private Integer id;
+    private String name;
+    
+    @Column(name = "email")
+    private String email;
+    private String phone;
+    private String website;
+
+    @OneToMany(mappedBy="user")
+    private List<Post> posts;
+}
+
+```
+
+Vamos entender por etapas:
+
+**@Setter**: Anotação do Lombok que gera os métodos setters.
+
+**@Getter**: Anotação do Lombok que gera os métodos getters.
+
+**@Entity**: Anotação do Spring que indica que a classe é uma entidade.
+
+**@Builder**: Anotação do Lombok que gera um construtor com todos os argumentos.
+
+**@NoArgsConstructor**: Anotação do Lombok que gera um construtor sem argumentos.
+
+**@AllArgsConstructor**: Anotação do Lombok que gera um construtor com todos os argumentos.
+
+**@Table(schema = "db", name = "user")**: Anotação do Spring que indica o nome da tabela e o nome do schema.
+
+**@Id**: Anotação do Spring que indica que o atributo é uma chave primária. O atributo passado com "@" é a chave primária.
+
+**@GeneratedValue(strategy=GeneratioType.IDENTITY)**: Anotação do Spring que indica que o valor do atributo é gerado automaticamente. O atributo passado com "@" é o valor gerado automaticamente.
+
+**@Column(name = "email")**: Anotação do Spring que indica o nome da coluna.
+
+**@OneToMany(mappedBy="user")**: Anotação do Spring que indica que a relação entre as entidades é de um para muitos. O atributo passado com "@" é o nome do atributo na outra entidade.
+
+MappedBy: Indica que a relação entre as entidades é de um para muitos. O atributo passado com "@" é o nome do atributo na outra entidade.
+
+Tipos de estratégia para definir uma chave primaria:
+
+|Tipo|Descrição|
+|---|---|
+|Identity|O banco de dados gera um valor automaticamente.|
+|Sequence|O banco de dados gera um valor baseado em uma sequência.|
+|Table|O banco de dados gera um valor baseado em uma tabela.|
+|Auto|O provedor de persistência escolhe a estratégia mais adequada.|
+
+
+### Templates
+
+Utiliza-se o Thymeleaf para criar as views.
+
+O Thymeleaf é um mecanismo de template que permite criar páginas HTML com conteúdo dinâmico.
+
+Utiliza-se o prefixo ```th:``` para definir atributos e expressões.
+
+Para cada objeto usa-se o prefixo ```th:object```.
+
+Para cada lista usa-se o prefixo ```th:each```.
+
+O acesso a um objeto é feito usando ```${objeto.atributo}```.
+
+```html
+<!--
+
+    Recebe um objeto do tipo User, e exibe os dados do usuário.
+ -->
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Website</th>
+    </tr>
+    <tr th:object="${user}">
+        <td><span th:text="${user.name}"></span></td>
+        <td><span th:text="${user.username}"></span></td>
+        <td><span th:text="${user.email}"></span></td>
+        <td><span th:text="${user.phone}"></span></td>
+        <td><span th:text="${user.website}"></span></td>
+</table>
+
+<!-- Exibindo os posts -->
+
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Body</th>
+    </tr>
+    <tr th:each="post: ${user.posts}">
+        <td><span th:text="${post.title}"></span></td>
+        <td><span th:text="${post.body}"></span></td>
+    </tr>
+</table>
+
+
+```
+
+Para adicionar um novo usuario, utiliza-se o prefixo ```th:action```.
+
+```html
+
+<form th:action>="@{/user}" method="post">
+    <label>
+        Name:
+        <input type ="text" id="name" th:field= "*{name}">
+        <br/>
+    </label>
+    <label>
+        Username:
+        <input type ="text" id="username" th:field= "*{username}">
+        <br/>
+    </label>
+    <label>
+        Email:
+        <input type ="text" id="email" th:field= "*{email}">
+        <br/>
+    </label>
+    <label>
+        Phone:
+        <input type ="text" id="phone" th:field= "*{phone}">
+        <br/>
+    </label>
+    <label>
+        Website:
+        <input type ="text" id="website" th:field= "*{website}">
+        <br/>
+    </label>
+    <input type="submit" value="Submit">
+</form>
+
+```
+
+Passa-se para o ```th:action``` a URL para onde os dados serão enviados. Nesse caso, a URL é /user, que é a URL do controlador. Passamos também o método HTTP, que nesse caso é POST.
+
+Para cada campo do formulário, utiliza-se o prefixo ```th:field```.
+
+Através deste prefixo, o Thymeleaf consegue fazer o binding dos dados enviados pelo usuário com o objeto User.
+
